@@ -4,10 +4,10 @@ ul#product_list {
 	#product_list li {
 		margin-bottom: 14px;
 		padding: 12px 8px;
-		border: 1px solid #eee;
-		-moz-border-radius: 3px;
-		-webkit-border-radius: 3px;
-		border-radius: 3px
+		border: 1px solid #3E5154;
+		-moz-border-radius: 0px;
+		-webkit-border-radius:0px;
+		border-radius: 0px
 	}
 		#product_list li a {
 			color: #374853;
@@ -29,7 +29,7 @@ ul#product_list {
    float: left;
 	padding:0 7px;
    width: 342px;/* 356 */
-	border-right:1px dotted #ccc
+	border-right:1px dotted #3E5154
 }
 	#product_list a.product_img_link {
 		overflow:hidden;
@@ -46,18 +46,18 @@ ul#product_list {
 		#product_list li span.new {
 			display: block;
 			position: absolute;
-			top: 15px;
-			right:-30px;
+			top: 10px;
+			left:-35px;
 			padding: 1px 4px;
 			width: 101px;
 			font-size:10px;
 			color: #fff;
 			text-align: center;
-			text-transform: uppercase;
-			-moz-transform: rotate(45deg);
-			-webkit-transform: rotate(45deg);
-			-o-transform:rotate(45deg);
-			-ms-transform: rotate(45deg);
+			text-transform: lowercase;
+			-moz-transform: rotate(-45deg);
+			-webkit-transform: rotate(-45deg);
+			-o-transform:rotate(-45deg);
+			-ms-transform: rotate(-45deg);
 			background-color: #990000
 		}
 	#product_list li h3 {
@@ -66,7 +66,7 @@ ul#product_list {
 		color:#000
 	}
 		#product_list li a {
-			color: #000;
+			color: #D4AA5D;
 			text-decoration: none;
 		}
 
@@ -115,7 +115,7 @@ ul#product_list {
 			margin-bottom: 15px;
 			font-weight:bold;
 			font-size: 18px;
-			color:#990000
+			color: #D4AA5D;
 		}
 		#product_list li span.availability {
 			display:none;
@@ -139,7 +139,7 @@ ul#product_list {
 		padding:0 10px;
 		border:none;
 		font-weight:bold;
-		color:#0088CC;
+		color:#878787;
 		background:url(../img/arrow_right_1.png) no-repeat 100% 4px transparent
 	}
 	#product_list li .lnk_view:hover {text-decoration:underline}
