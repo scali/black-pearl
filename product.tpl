@@ -156,8 +156,8 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 	<div id="admin-action">
 		<p>{l s='This product is not visible to your customers.'}
 		<input type="hidden" id="admin-action-product-id" value="{$product->id}" />
-		<input type="submit" value="{l s='Publish'}" class="exclusive" onclick="submitPublishProduct('{$base_dir}{$smarty.get.ad|escape:'htmlall':'UTF-8'}', 0, '{$smarty.get.adtoken|escape:'htmlall':'UTF-8'}')"/>
-		<input type="submit" value="{l s='Back'}" class="exclusive" onclick="submitPublishProduct('{$base_dir}{$smarty.get.ad|escape:'htmlall':'UTF-8'}', 1, '{$smarty.get.adtoken|escape:'htmlall':'UTF-8'}')"/>
+		<!--input type="submit" value="{l s='Publish'}" class="exclusive" onclick="submitPublishProduct('{$base_dir}{$smarty.get.ad|escape:'htmlall':'UTF-8'}', 0, '{$smarty.get.adtoken|escape:'htmlall':'UTF-8'}')"/>
+		<input type="submit" value="{l s='Back'}" class="exclusive" onclick="submitPublishProduct('{$base_dir}{$smarty.get.ad|escape:'htmlall':'UTF-8'}', 1, '{$smarty.get.adtoken|escape:'htmlall':'UTF-8'}')"/-->
 		</p>
 		<p id="admin-action-result"></p>
 		</p>
@@ -431,15 +431,15 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 			{*close if for show price*}
 			{/if}
 			{if (!$allow_oosp && $product->quantity <= 0) OR !$product->available_for_order OR (isset($restricted_country_mode) AND $restricted_country_mode) OR $PS_CATALOG_MODE}
-				<span class="exclusive">
+				<!--span class="exclusive">
 					<span></span>
 					{l s='Add to cart'}
-				</span>
+				</span-->
 			{else}
-				<p id="add_to_cart" class="buttons_bottom_block">
+				<!--p id="add_to_cart" class="buttons_bottom_block">
 					<span></span>
 					<input type="submit" name="Submit" value="{l s='Add to cart'}" class="exclusive" />
-				</p>
+				</p-->
 			{/if}
 			{if isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS}{$HOOK_PRODUCT_ACTIONS}{/if}
 
@@ -547,7 +547,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 								</div>
 								<p class="clearfix" style="margin-top:5px">
 									<a class="button" href="{$accessoryLink|escape:'htmlall':'UTF-8'}" title="{l s='View'}">{l s='View'}</a>
-									<a class="exclusive button ajax_add_to_cart_button" href="{$link->getPageLink('cart', true, NULL, "qty=1&amp;id_product={$accessory.id_product|intval}&amp;token={$static_token}&amp;add")}" rel="ajax_id_product_{$accessory.id_product|intval}" title="{l s='Add to cart'}">{l s='Add to cart'}</a>
+									<!--a class="exclusive button ajax_add_to_cart_button" href="{$link->getPageLink('cart', true, NULL, "qty=1&amp;id_product={$accessory.id_product|intval}&amp;token={$static_token}&amp;add")}" rel="ajax_id_product_{$accessory.id_product|intval}" title="{l s='Add to cart'}">{l s='Add to cart'}</a-->
 								</p>
 							</li>
 						{/if}
