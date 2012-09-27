@@ -433,10 +433,10 @@ $(function(){ldelim}
 			<input type="checkbox" name="newsletter" id="newsletter" value="1" {if isset($smarty.post.newsletter) AND $smarty.post.newsletter == 1} checked="checked"{/if} />
 			<label for="newsletter">{l s='Sign up for our newsletter'}</label>
 		</p>
-		<p class="checkbox" >
+		<!--p class="checkbox" >
 			<input type="checkbox"name="optin" id="optin" value="1" {if isset($smarty.post.optin) AND $smarty.post.optin == 1} checked="checked"{/if} />
 			<label for="optin">{l s='Receive special offers from our partners'}</label>
-		</p>
+		</p-->
 		{/if}
 	</fieldset>
 	{if $b2b_enable}

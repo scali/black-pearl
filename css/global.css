@@ -90,10 +90,12 @@ p {padding-bottom:20px}
 .warning {
 	margin:0 0 10px 0;
 	padding:10px;
-	border:1px solid #e6db55;
+	border:0px solid #e6db55;
 	font-size:13px;
-	background:#ffffe0
+	background: none repeat scroll 0 0 #D4AA5D;
+	color: #FFFFFF
 }
+
 .success {
 	margin:0 0 10px 0;
 	padding:10px;
@@ -104,9 +106,9 @@ p {padding-bottom:20px}
 .error {
 	margin:0 0 10px 0;
 	padding:10px;
-	border:1px solid #990000;
+	border:1px solid #FF0000;
 	font-size:13px;
-	background:#ffcccc
+	/*background:#ffcccc*/
 }
 .error ol {margin-left:20px}
 .error p.lnk {
@@ -136,13 +138,13 @@ span.exclusive_mini, span.exclusive_small, span.exclusive, span.exclusive_large,
 	position:relative;
 	display:inline-block;
 	padding:5px 7px;
-	border:1px solid #cc9900;
+	border:0px solid #cc9900;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	font-weight:bold;
-	color:#000;
-	background:url(../img/bg_bt.gif) repeat-x 0 0 #f4b61b;
+	color:#FFF;
+	background:url(../img/bg_bt.gif) repeat-x 0 0 #886E3C;
 	cursor: pointer;
 }
 *:first-child+html input.button_mini, *:first-child+html input.button_small, *:first-child+html input.button, *:first-child+html input.button_large,
@@ -1334,8 +1336,9 @@ a.iframe {font-weight:bold}
 }
 
 #password .icon {
-	position:relative;
-	top:6px;
+	margin-right: 10px;
+    position: relative;
+    top: 3px;
 }
 
 
@@ -1600,7 +1603,7 @@ ul#suppliers_list li .right_side {float:right;}
 	padding:10px;
 	border:0px solid #e6db55;
 	font-size:13px;
-	background:#886E3C;
+	background: none repeat scroll 0 0 #D4AA5D;
 	color: #FFFFFF
 }
 #search .sortPagiBar {margin-bottom:20px}
