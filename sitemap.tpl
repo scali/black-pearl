@@ -29,7 +29,7 @@
 
 <h1>{l s='Sitemap'}</h1>
 <div id="sitemap_content" class="clearfix">
-	<div class="sitemap_block">
+	<!--div class="sitemap_block">
 		<h3>{l s='Our offers'}</h3>
 		<ul>
 			<li><a href="{$link->getPageLink('new-products')}">{l s='New products'}</a></li>
@@ -50,7 +50,7 @@
 			{if $voucherAllowed}<li><a href="{$link->getPageLink('discount', true)}">{l s='Discounts'}</a></li>{/if}
 			<li><a href="{$link->getPageLink('history', true)}">{l s='Order history'}</a></li>
 		</ul>
-	</div>
+	</div-->
 	<br class="clear" />
 </div>
 <div id="listpage_content">
