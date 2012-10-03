@@ -2,7 +2,9 @@
 #newsletter_block_left {
 	padding:7px;
 	border:1px solid #ccc;
+	font-size: 11px;
 	background:#eee;
+	/**/
 }
 #newsletter_block_left h4 {
 	padding:0 0 12px 28px;
