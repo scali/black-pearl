@@ -2,7 +2,7 @@
 #search_block_top {
 	position:absolute;
 	top:44px;
-	left:0;
+	left:230px;
 }
 #search_block_top p {padding:0;}
 #search_block_top #search_query_top {
@@ -20,7 +20,7 @@
 	border:none;
 	border-radius:0;
 	color:#fff;
-	text-transform:uppercase;
+	/*text-transform:uppercase;*/
 	background:url(img/bg_search_submit.png) repeat-x 0 0 #101010;
 	float: left;
 	height: 25px;

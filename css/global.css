@@ -51,7 +51,7 @@ a {cursor:pointer}
 		generic style
 ************************************************************************************************ */
 body{
-	font:normal 11px/14px Arial, Verdana, sans-serif;
+	font:normal 14px/17px Arial, Verdana, sans-serif;
 	color:#787878;
 	background:#222
 }
@@ -96,12 +96,16 @@ p {padding-bottom:20px}
 	color: #FFFFFF
 }
 
+p.warning a {
+	color: #000;
+}
+
 .success {
 	margin:0 0 10px 0;
 	padding:10px;
-	border:1px solid #5cff74;
+	border:1px solid #00FF00;
 	font-size:13px;
-	background: #d3ffab
+	/*background: #d3ffab*/
 }
 .error {
 	margin:0 0 10px 0;
