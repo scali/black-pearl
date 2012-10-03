@@ -258,10 +258,10 @@ $(function(){ldelim}
 						<input type="checkbox" name="newsletter" id="newsletter" value="1" {if isset($smarty.post.newsletter) && $smarty.post.newsletter == '1'}checked="checked"{/if}>
 						<label for="newsletter">{l s='Sign up for our newsletter'}</label>
 					</p>
-					<p class="checkbox">
+					<!--p class="checkbox">
 						<input type="checkbox" name="optin" id="optin" value="1" {if isset($smarty.post.optin) && $smarty.post.optin == '1'}checked="checked"{/if}>
 						<label for="optin">{l s='Receive special offers from our partners'}</label>
-					</p>
+					</p-->
 				{/if}
 				<h3>{l s='Delivery address'}</h3>
 				{foreach from=$dlv_all_fields item=field_name}
