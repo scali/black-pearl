@@ -363,7 +363,8 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 
 		<div class="content_prices clearfix">
 			<!-- prices -->
-			{if $product->show_price AND !isset($restricted_country_mode) AND !$PS_CATALOG_MODE}
+			{*if $product->show_price AND !isset($restricted_country_mode) AND !$PS_CATALOG_MODE *}
+			{if $product->show_price AND !isset($restricted_country_mode) }
 
 			{if $product->online_only}
 			<p class="online_only">{l s='Online only'}</p>
@@ -379,11 +380,14 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 				{/if}
 
 				<p class="our_price_display">
-				{if $priceDisplay >= 0 && $priceDisplay <= 2}
+				{*if $priceDisplay >= 0 && $priceDisplay <= 2*}
+				{if $priceDisplay >= 0 && $priceDisplay <= 2 && $productPrice < 10000}
 					<span id="our_price_display">{convertPrice price=$productPrice}</span>
 					<!--{if $tax_enabled  && ((isset($display_tax_label) && $display_tax_label == 1) OR !isset($display_tax_label))}
 						{if $priceDisplay == 1}{l s='tax excl.'}{else}{l s='tax incl.'}{/if}
 					{/if}-->
+				{else}
+					<span id="our_price_display">Nous contacter</span>
 				{/if}
 				</p>
 

@@ -372,25 +372,28 @@ ul.pagination a, ul.pagination span {
 	display:inline-block;
 	height:24px;
 	width:24px;
-	border:1px solid #eee;
+	border:1px solid #CCC;
 	-moz-border-radius:2px;
 	-webkit-border-radius:2px;
 	border-radius:2px;
 	font:11px/24px Arial,Verdana,sans-serif;
-	color:#999
+	color:#000;
+	background-color: #CCC;
 }
 ul.pagination a {
 	text-align:center;
 }
 ul.pagination a:hover {
-	color:#333;
-	border:1px solid #333
+	color:#FFF;
+	border:1px solid #D4AA5D;
+	background-color: #D4AA5D;
 }
 ul.pagination .current span {
-	color:#000;
-	border:1px solid #fff
+	color:#FFF;
+	border:1px solid #D4AA5D;
+	background-color: #D4AA5D;
 }
-ul.pagination li.disabled span {color:#ccc}
+ul.pagination li.disabled span {color:#222; border:0px solid #222; background-color: #222;}
 
 #pagination_previous {float:left}
 #pagination_next {float:right}
@@ -604,8 +607,9 @@ ul.idTabs li {
 }
 .idTabs a {
 	display:block;
-	padding:10px 10px 7px 10px;
+	padding:3px 10px 7px 10px;
 	font-weight:bold;
+	font-size: 11px;
 	text-decoration:none;
 	color:#fff;
 	background:#000

@@ -2,7 +2,8 @@
 #search_block_top {
 	position:absolute;
 	top:44px;
-	left:230px;
+	/*left:230px;*/
+	right:0px;
 }
 #search_block_top p {padding:0;}
 #search_block_top #search_query_top {
@@ -16,13 +17,36 @@
 	float: left;
 }
 
-#search_block_top .button {
+/*#search_block_top .button {
 	border:none;
 	border-radius:0;
-	color:#fff;
+	color:#fff;*/
 	/*text-transform:uppercase;*/
-	background:url(img/bg_search_submit.png) repeat-x 0 0 #101010;
+	/*background:url(img/bg_search_submit.png) repeat-x 0 0 #101010;
 	float: left;
 	height: 25px;
-}
+}*/
 
+#search_block_top .button {
+	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("img/icon-search2.png") no-repeat scroll center center transparent;
+    border-color: -moz-use-text-color -moz-use-text-color -moz-use-text-color #666666;
+    border-image: none;
+    border-radius: 0 0 0 0;
+    border-style: none none none solid;
+    border-width: medium medium medium 1px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-weight: normal;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    text-indent: -9999em;
+    width: 27px;
+}
