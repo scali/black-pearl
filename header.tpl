@@ -75,7 +75,7 @@
 			<div id="header" class="grid_9 alpha omega">
 				<a id="header_logo" href="{$base_dir}" title="{$shop_name|escape:'htmlall':'UTF-8'}">
 					<!--img class="logo" src="{$logo_url}" alt="{$shop_name|escape:'htmlall':'UTF-8'}" {if $logo_image_width}width="{$logo_image_width}"{/if} {if $logo_image_height}height="{$logo_image_height}" {/if} /-->
-					<img class="logo" src="/boutique/img/lebonheurdujour.png" alt="{$shop_name|escape:'htmlall':'UTF-8'}" width="300" height=52"/>
+					<img class="logo" src="/magasin/img/lebonheurdujour.png" alt="{$shop_name|escape:'htmlall':'UTF-8'}" width="300" height=52"/>
 				</a>
 				<div id="header_right" class="grid_6 omega">
 					{$HOOK_TOP}
