@@ -91,23 +91,23 @@
 
 		{if $products}
 			<div class="content_sortPagiBar">
-				{include file="$tpl_dir./pagination.tpl"}
 				<div class="sortPagiBar clearfix">
 					{include file="./product-sort.tpl"}
 					{include file="./product-compare.tpl"}
 					{include file="./nbr-product-page.tpl"}
 				</div>
+				{include file="$tpl_dir./pagination.tpl"}
 			</div>
 			
 			{include file="./product-list.tpl" products=$products}
 			
+			{include file="./pagination.tpl"}
 			<div class="content_sortPagiBar">
-				<div class="sortPagiBar clearfix">
+				<!--div class="sortPagiBar clearfix">
 					{include file="./product-sort.tpl"}
 					{include file="./product-compare.tpl"}
 					{include file="./nbr-product-page.tpl"}
-				</div>
-				{include file="./pagination.tpl"}
+				</div-->	
 			</div>
 		{/if}
 	{elseif $category->id}
