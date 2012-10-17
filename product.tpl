@@ -381,8 +381,14 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 
 				<p class="our_price_display">
 				{*if $priceDisplay >= 0 && $priceDisplay <= 2*}
-				{if $priceDisplay >= 0 && $priceDisplay <= 2 && $productPrice < -1}
-					<span id="our_price_display">{convertPrice price=$productPrice}</span>
+				{if $priceDisplay >= 0 && $priceDisplay <= 2 && $productPrice < 15000}
+					<!--span id="our_price_display">{convertPrice price=$productPrice}</span-->
+					
+					<span id="our_price_display" style="display: inline; font-size:15px">
+						<a href="/magasin/contactez-nous?message=Ref:[{$product->name|escape:'htmlall':'UTF-8'}]&id_contact=2" style="color: #D4AA5D;">
+						{convertPrice price=$productPrice}</a>
+					</span>
+									
 					<!--{if $tax_enabled  && ((isset($display_tax_label) && $display_tax_label == 1) OR !isset($display_tax_label))}
 						{if $priceDisplay == 1}{l s='tax excl.'}{else}{l s='tax incl.'}{/if}
 					{/if}-->
@@ -434,6 +440,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 			{/if}
 			{*close if for show price*}
 			{/if}
+					
 			{if (!$allow_oosp && $product->quantity <= 0) OR !$product->available_for_order OR (isset($restricted_country_mode) AND $restricted_country_mode) OR $PS_CATALOG_MODE}
 				<!--span class="exclusive">
 					<span></span>
@@ -450,6 +457,12 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 			<div class="clear"></div>
 		</div>
 		</form>
+		{*for product with show price set to false*}
+		{else}
+			<span id="our_price_display_when_show_price_is_false" style="display: inline; font-size:15px">
+				<a href="/magasin/contactez-nous?message=Ref:[{$product->name|escape:'htmlall':'UTF-8'}]&id_contact=2" style="color: #D4AA5D;">
+				Nous contacter</a>
+			</span>
 		{/if}
 		{if isset($HOOK_EXTRA_RIGHT) && $HOOK_EXTRA_RIGHT}{$HOOK_EXTRA_RIGHT}{/if}
 	</div>
