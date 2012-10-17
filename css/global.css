@@ -329,7 +329,7 @@ ul.footer_links li .icon {
 #center_column .sortPagiBar {
 	padding:10px;
 	font:normal 11px Georgia,Arial, Verdana, sans-serif;
-	color:#fff;
+	color:#000;
 	background:#CCCCCC;
 	-moz-border-radius: 3px;
 	-webkit-border-radius:3px;
@@ -912,7 +912,7 @@ table#cart_summary .gift-icon {
 #create-account_form h4 {
 	padding-bottom:22px;
 	font-size:11px;
-	color:#333
+	color:#666666
 }
 
 #create-account_form label,

@@ -381,13 +381,13 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 
 				<p class="our_price_display">
 				{*if $priceDisplay >= 0 && $priceDisplay <= 2*}
-				{if $priceDisplay >= 0 && $priceDisplay <= 2 && $productPrice < 10000}
+				{if $priceDisplay >= 0 && $priceDisplay <= 2 && $productPrice < -1}
 					<span id="our_price_display">{convertPrice price=$productPrice}</span>
 					<!--{if $tax_enabled  && ((isset($display_tax_label) && $display_tax_label == 1) OR !isset($display_tax_label))}
 						{if $priceDisplay == 1}{l s='tax excl.'}{else}{l s='tax incl.'}{/if}
 					{/if}-->
 				{else}
-					<span id="our_price_display">Nous contacter</span>
+					<span id="our_price_display" style="display: inline; font-size:15px"><a href="/magasin/contactez-nous?message=Ref:[{$product->name|escape:'htmlall':'UTF-8'}]&id_contact=2" style="color: #D4AA5D;">Nous contacter</a></span>
 				{/if}
 				</p>
 
