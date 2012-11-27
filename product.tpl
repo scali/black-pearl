@@ -150,6 +150,9 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 </script>
 
 {include file="$tpl_dir./breadcrumb.tpl"}
+<!-- Start of Rich Snippets DIV-->
+<div itemscope itemtype="http://schema.org/Product">
+
 <div id="primary_block" class="clearfix">
 
 	{if isset($adminActionDisplay) && $adminActionDisplay}
@@ -198,7 +201,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 					{assign var=imageIds value="`$product->id`-`$image.id_image`"}
 					<li id="thumbnail_{$image.id_image}">
 						<a href="{$link->getImageLink($product->link_rewrite, $imageIds, 'thickbox')}" rel="other-views" class="thickbox {if $smarty.foreach.thumbnails.first}shown{/if}" title="{$image.legend|htmlspecialchars}">
-							<img id="thumb_{$image.id_image}" src="{$link->getImageLink($product->link_rewrite, $imageIds, 'medium')}" alt="{$image.legend|htmlspecialchars}" height="{$mediumSize.height}" width="{$mediumSize.width}" />
+							<img {if $smarty.foreach.thumbnails.first} itemprop="image" {/if} id="thumb_{$image.id_image}" src="{$link->getImageLink($product->link_rewrite, $imageIds, 'medium')}" alt="{$product->name|escape:'htmlall':'UTF-8'}" height="{$mediumSize.height}" width="{$mediumSize.width}" />
 						</a>
 					</li>
 					{/foreach}
@@ -220,12 +223,12 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 
 	<!-- left infos-->
 	<div id="pb-left-column">
-		<h1>{$product->name|escape:'htmlall':'UTF-8'}</h1>
+		<h1 itemprop="name">{$product->name|escape:'htmlall':'UTF-8'}</h1>
 
 		{if $product->description_short OR $packItems|@count > 0}
 		<div id="short_description_block">
 			{if $product->description_short}
-				<div id="short_description_content" class="rte align_justify">{$product->description_short}</div>
+				<div itemprop="description" id="short_description_content" class="rte align_justify">{$product->description_short}</div>
 			{/if}
 			{if $product->description}
 			<p class="buttons_bottom_block"><a href="javascript:{ldelim}{rdelim}" class="button">{l s='More details'}</a></p>
@@ -649,6 +652,7 @@ var fieldRequired = '{l s='Please fill in all required fields, then save the cus
 		{include file="$tpl_dir./product-list.tpl" products=$packItems}
 	</div>
 {/if}
-
+<!-- End of Rich Snippets DIV -->
+</div> 
 {/if}
 
